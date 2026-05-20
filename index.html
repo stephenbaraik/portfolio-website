@@ -12,12 +12,27 @@
   <meta property="og:description" content="I help teams automate ETL workflows, reporting, and machine learning systems.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://stephenbaraik.github.io/portfolio-website/">
-  <meta property="og:image" content="https://stephenbaraik.github.io/portfolio-website/stephen-baraik.jpg">
+  <meta property="og:image" content="https://stephenbaraik.github.io/portfolio-website/og-image-1200x630.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Stephen Baraik - Freelance Data Scientist and Data Engineer">
   <meta property="og:locale" content="en_IN">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Stephen Baraik | Freelance Data Scientist & Data Engineer">
   <meta name="twitter:description" content="Data Scientist and Data Engineer based in Navi Mumbai, India.">
-  <meta name="twitter:image" content="https://stephenbaraik.github.io/portfolio-website/stephen-baraik.jpg">
+  <meta name="twitter:image" content="https://stephenbaraik.github.io/portfolio-website/og-image-1200x630.png">
+  <meta name="twitter:image:alt" content="Stephen Baraik - Freelance Data Scientist and Data Engineer">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP15SCRDEM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "G-JP15SCRDEM");
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&display=swap" rel="stylesheet">
@@ -132,9 +147,9 @@
             make better decisions, and scale with confidence.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="mailto:stephenbaraik@gmail.com">Hire Me</a>
+            <a class="btn btn-primary" href="mailto:stephenbaraik@gmail.com" data-track="hire_me">Hire Me</a>
             <a class="btn btn-secondary" href="https://github.com/stephenbaraik" target="_blank" rel="noreferrer">View GitHub</a>
-            <a class="btn btn-secondary" href="stephen-baraik-resume.pdf" download>Download Resume</a>
+            <a class="btn btn-secondary" href="stephen-baraik-resume.pdf" download data-track="download_resume">Download Resume</a>
           </div>
         </div>
         <figure class="hero-photo">
@@ -216,7 +231,7 @@
           <p class="project-year">2024</p>
           <h3>Bitcoin Data Pipeline</h3>
           <p class="project-stack">Python, SQL, Airflow, Docker, PostgreSQL</p>
-          <a class="project-link" href="https://github.com/stephenbaraik" target="_blank" rel="noreferrer">GitHub Project</a>
+          <a class="project-link" href="https://github.com/stephenbaraik/RL_Bitcoin_Trader" target="_blank" rel="noreferrer">GitHub Project</a>
           <p class="project-result">Result: Set up a repeatable ingestion flow for faster market trend analysis with less manual cleanup.</p>
           <ul>
             <li>Built end-to-end ETL pipelines to ingest and process real-time Bitcoin market data.</li>
@@ -228,7 +243,7 @@
           <p class="project-year">2024</p>
           <h3>Crude Oil Market Analysis &amp; Forecasting</h3>
           <p class="project-stack">Python, Pandas, NumPy, Matplotlib</p>
-          <a class="project-link" href="https://github.com/stephenbaraik" target="_blank" rel="noreferrer">GitHub Project</a>
+          <a class="project-link" href="https://github.com/stephenbaraik/Crude-Analysis" target="_blank" rel="noreferrer">GitHub Project</a>
           <p class="project-result">Result: Produced decision-ready forecasts and visuals to support faster interpretation of market direction.</p>
           <ul>
             <li>Performed time-series forecasting on Brent crude prices using statistical techniques.</li>
@@ -240,7 +255,7 @@
           <p class="project-year">2023 - 2025</p>
           <h3>Machine Learning &amp; Big Data Projects</h3>
           <p class="project-stack">KNN, Regression, Classification</p>
-          <a class="project-link" href="https://github.com/stephenbaraik" target="_blank" rel="noreferrer">GitHub Project</a>
+          <a class="project-link" href="https://github.com/stephenbaraik/Projects" target="_blank" rel="noreferrer">GitHub Project</a>
           <p class="project-result">Result: Improved model reliability using feature engineering and validation across high-volume datasets.</p>
           <ul>
             <li>Built and optimized machine learning models using feature engineering and cross-validation.</li>
@@ -302,9 +317,9 @@
     <section id="contact" class="container panel contact reveal">
       <h2>Start a Project</h2>
       <p>Tell me what you need automated or analyzed. I usually reply within 24 hours.</p>
-      <form class="contact-form" action="https://formspree.io/f/xykvkvog" method="POST">
+      <form class="contact-form" action="https://formspree.io/f/xykvkvog" method="POST" data-track-form="inquiry_form">
         <input type="hidden" name="_subject" value="New portfolio inquiry">
-        <input type="hidden" name="_next" value="https://stephenbaraik.github.io/portfolio-website/?inquiry=sent#contact">
+        <input type="hidden" name="_next" value="https://stephenbaraik.github.io/portfolio-website/thanks.html">
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden-field" aria-hidden="true">
         <label>
           Name
@@ -320,7 +335,7 @@
         </label>
         <div class="contact-cta">
           <button class="btn btn-primary" type="submit">Send Inquiry</button>
-          <a class="btn btn-secondary" href="https://calendly.com/stephenbaraik/30min" target="_blank" rel="noreferrer">Book a Call</a>
+          <a class="btn btn-secondary" href="https://calendly.com/stephenbaraik/30min" target="_blank" rel="noreferrer" data-track="book_call">Book a Call</a>
           <a class="btn btn-secondary" href="mailto:stephenbaraik@gmail.com?subject=Project%20Inquiry%20from%20Portfolio">Email Directly</a>
         </div>
       </form>
