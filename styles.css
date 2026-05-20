@@ -407,6 +407,21 @@ textarea {
   color: var(--muted);
 }
 
+.testimonial {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  border-left: 4px solid var(--accent-2);
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 10px;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.testimonial-author {
+  margin: 0.7rem 0 0;
+  color: var(--muted);
+}
+
 .form-note {
   margin-top: 0.8rem;
   color: var(--muted);
