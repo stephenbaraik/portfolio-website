@@ -15,6 +15,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -26,6 +27,7 @@ body {
     radial-gradient(circle at 92% 8%, #d4efe8 0%, rgba(212, 239, 232, 0) 44%),
     var(--bg);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 .container {
@@ -104,6 +106,9 @@ a {
 .nav-links a {
   color: var(--muted);
   font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
 }
 
 .nav-links a:hover,
@@ -199,6 +204,7 @@ h1 span {
   font-weight: 700;
   border: 1px solid transparent;
   transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+  min-height: 44px;
 }
 
 .btn:hover {
@@ -385,6 +391,7 @@ textarea {
   border-radius: 10px;
   padding: 0.65rem 0.75rem;
   background: rgba(255, 255, 255, 0.95);
+  width: 100%;
 }
 
 textarea {
@@ -505,6 +512,10 @@ textarea {
     width: min(360px, 100%);
   }
 
+  .bg-orb {
+    opacity: 0.55;
+  }
+
   .chip-groups,
   .service-grid,
   .process-grid,
@@ -519,6 +530,11 @@ textarea {
     align-items: flex-start;
   }
 
+  .nav-links {
+    width: 100%;
+    gap: 0.45rem 0.7rem;
+  }
+
   .hero {
     padding-top: 2.2rem;
   }
@@ -530,6 +546,10 @@ textarea {
   .hero-photo {
     justify-self: start;
     width: min(320px, 100%);
+  }
+
+  .bg-orb {
+    display: none;
   }
 
   .panel {
@@ -583,6 +603,16 @@ textarea {
 
   .btn {
     width: 100%;
+  }
+
+  .panel {
+    border-radius: 16px;
+  }
+}
+
+@media (hover: none) {
+  .btn:hover {
+    transform: none;
   }
 }
 
