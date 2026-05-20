@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://stephenbaraik.com/sitemap.xml
+Sitemap: https://stephenbaraik.github.io/portfolio-website/sitemap.xml
