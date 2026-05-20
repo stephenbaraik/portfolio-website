@@ -385,6 +385,17 @@ textarea {
   color: var(--muted);
 }
 
+.form-note {
+  margin-top: 0.8rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.hidden-field {
+  position: absolute;
+  left: -9999px;
+}
+
 .site-footer {
   border-top: 1px solid rgba(28, 36, 33, 0.1);
   padding: 1rem 0 1.5rem;
